@@ -11,6 +11,7 @@
 		E0E9A8C52993C92B00A19A7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E9A8C42993C92B00A19A7C /* ContentView.swift */; };
 		E0E9A8C72993C92C00A19A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E9A8C62993C92C00A19A7C /* Assets.xcassets */; };
 		E0E9A8CA2993C92C00A19A7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E9A8C92993C92C00A19A7C /* Preview Assets.xcassets */; };
+		E0E9A8D72993E99800A19A7C /* SimplyCoreAudio in Frameworks */ = {isa = PBXBuildFile; productRef = E0E9A8D62993E99800A19A7C /* SimplyCoreAudio */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E9A8D72993E99800A19A7C /* SimplyCoreAudio in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = AudioInputSwitcher;
+			packageProductDependencies = (
+				E0E9A8D62993E99800A19A7C /* SimplyCoreAudio */,
+			);
 			productName = AudioInputSwitcher;
 			productReference = E0E9A8BF2993C92B00A19A7C /* AudioInputSwitcher.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = E0E9A8B62993C92B00A19A7C;
+			packageReferences = (
+				E0E9A8D52993E99800A19A7C /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */,
+			);
 			productRefGroup = E0E9A8C02993C92B00A19A7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,7 +282,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = hi;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -301,7 +311,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = hi;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -336,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0E9A8D52993E99800A19A7C /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rnine/SimplyCoreAudio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0E9A8D62993E99800A19A7C /* SimplyCoreAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0E9A8D52993E99800A19A7C /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */;
+			productName = SimplyCoreAudio;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0E9A8B72993C92B00A19A7C /* Project object */;
 }
