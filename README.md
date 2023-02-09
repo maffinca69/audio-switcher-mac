@@ -1,4 +1,4 @@
-# Easy microphone switcher for MacOS
+# Simple microphone switcher for MacOS
 
 ## Problem❓
 Often, the microphones of plug-in headphones (earpods, airpods) are of worse quality than the built-in microphone in your MacBook. To switch it, you need to go to settings -> sound -> input -> look for the device...
